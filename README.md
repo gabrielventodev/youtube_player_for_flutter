@@ -31,9 +31,7 @@ Add the dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  youtube_player_for_flutter:
-    git:
-      url: https://github.com/gabrielventodev/youtube_player_for_flutter.git
+  youtube_player_for_flutter: ^0.0.1
 ```
 
 Then run:
