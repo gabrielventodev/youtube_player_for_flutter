@@ -1,10 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'youtube_player_controller.dart';
-import 'youtube_player_value.dart';
 
 /// A widget that displays a YouTube player using the native platform's WebView.
 ///
@@ -45,9 +43,16 @@ class YoutubePlayerWidget extends StatelessWidget {
           },
         );
       case TargetPlatform.iOS:
-        // iOS support will be added in a future version
-        return const Center(
-          child: Text('iOS support coming soon'),
+        return UiKitView(
+          viewType: 'youtube_player_view',
+          creationParams: controller.creationParams,
+          creationParamsCodec: const StandardMessageCodec(),
+          onPlatformViewCreated: controller.onPlatformViewCreated,
+          gestureRecognizers: <Factory<OneSequenceGestureRecognizer>>{
+            Factory<OneSequenceGestureRecognizer>(
+              () => EagerGestureRecognizer(),
+            ),
+          },
         );
       default:
         return Center(
