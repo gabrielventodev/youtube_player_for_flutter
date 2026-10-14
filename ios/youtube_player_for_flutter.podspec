@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'youtube_player_for_flutter'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Native YouTube player for Flutter using the YouTube IFrame Player API.'
   s.description      = <<-DESC
 A Flutter plugin that embeds YouTube videos using WKWebView and the YouTube IFrame Player API.

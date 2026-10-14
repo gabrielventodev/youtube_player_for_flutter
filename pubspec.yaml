@@ -1,6 +1,6 @@
 name: youtube_player_for_flutter
 description: "A native Flutter plugin to embed YouTube videos using the YouTube IFrame Player API. Supports playback controls, fullscreen, Shorts detection, and quality management."
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/gabrielventodev/youtube_player_for_flutter
 
 environment:

@@ -1,3 +1,7 @@
+## 0.0.2
+
+* Fix the Android build with Kotlin Gradle Plugin 2.2+ (required by Flutter 3.47): the shared module now uses the `compilerOptions` DSL instead of `kotlinOptions`, which is an error since Kotlin 2.2.
+
 ## 0.0.1
 
 * Initial release.

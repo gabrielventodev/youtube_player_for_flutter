@@ -31,7 +31,7 @@ Add the dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  youtube_player_for_flutter: ^0.0.1
+  youtube_player_for_flutter: ^0.0.2
 ```
 
 Then run:
